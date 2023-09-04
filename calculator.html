@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/calculator.css">
+
+        <title>Calculator</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="content">
+                <div class="calculator">
+                    <div class="calculator-visor">
+                        <input type="text" disabled name="display" id="display" placeholder="0">
+                    </div>
+                    <div class="calculator-button">
+                        <div class="numbers">
+                            <input onclick="deleteAll()" id="ac" class="calculator-btn btn" type="button" value="AC">
+                            <input onclick="numDelete()" id="del" class="calculator-btn btn" type="button" value="DEL">
+                            <input onclick="addDisplay(id)" id="%" class="calculator-btn btn" type="button" value="%">
+                            <input onclick="addDisplay(id)" id="/" class="calculator-btn btn" type="button" value="/">
+                        </div>
+                        <div class="numbers">
+                            <input onclick="addDisplay(id)" id="7" class="calculator-btn btn" type="button" value="7">
+                            <input onclick="addDisplay(id)" id="8" class="calculator-btn btn" type="button" value="8">
+                            <input onclick="addDisplay(id)" id="9" class="calculator-btn btn" type="button" value="9">
+                            <input onclick="addDisplay(id)" id="*" class="calculator-btn btn" type="button" value="*">
+                        </div>
+                        <div class="numbers">
+                            <input onclick="addDisplay(id)" id="4" class="calculator-btn btn" type="button" value="4">
+                            <input onclick="addDisplay(id)" id="5" class="calculator-btn btn" type="button" value="5">
+                            <input onclick="addDisplay(id)" id="6" class="calculator-btn btn" type="button" value="6">
+                            <input onclick="addDisplay(id)" id="-" class="calculator-btn btn" type="button" value="-">
+                        </div>
+                        <div class="numbers">
+                            <input onclick="addDisplay(id)" id="1" class="calculator-btn btn" type="button" value="1">
+                            <input onclick="addDisplay(id)" id="2" class="calculator-btn btn" type="button" value="2">
+                            <input onclick="addDisplay(id)" id="3" class="calculator-btn btn" type="button" value="3">
+                            <input onclick="addDisplay(id)" id="+" class="calculator-btn btn" type="button" value="+">
+                        </div>
+                        <div class="numbers">
+                            <input onclick="addDisplay(id)" id="00" class="calculator-btn btn" type="button" value="00">
+                            <input onclick="addDisplay(id)" id="0" class="calculator-btn btn" type="button" value="0">
+                            <input onclick="addDisplay(id)" id="." class="calculator-btn btn" type="button" value=".">
+                            <input onclick="result()" id="equal" class="calculator-btn btn" type="button" value="=">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/calculator.js"></script>
+    </body>
+</html>
